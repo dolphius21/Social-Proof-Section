@@ -1,0 +1,29 @@
+$primary-color: hsl(300, 43%, 22%); // Very Dark Magenta
+$secondary-color: hsl(333, 80%, 67%); // Soft Pink
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return hsl(303, 10%, 53%); // Dark Grayish Magenta
+  } @else {
+    @return hsl(300, 24%, 96%); // Light Grayish Magenta
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Spartan", sans-serif;
+}
+
+@mixin media-sml {
+  @media screen and (min-width: 375px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
