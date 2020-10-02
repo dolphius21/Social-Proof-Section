@@ -1,11 +1,13 @@
 $primary-color: hsl(300, 43%, 22%); // Very Dark Magenta
 $secondary-color: hsl(333, 80%, 67%); // Soft Pink
+$light-neutral-color: hsl(300, 24%, 96%); // Light Grayish Magenta
+$dark-neutral-color: hsl(303, 10%, 53%);
 
 @function set-text-color($color) {
   @if (lightness($color) > 40%) {
-    @return hsl(303, 10%, 53%); // Dark Grayish Magenta
+    @return $dark-neutral-color; // Dark Grayish Magenta
   } @else {
-    @return hsl(300, 24%, 96%); // Light Grayish Magenta
+    @return $light-neutral-color; // Light Grayish Magenta
   }
 }
 
@@ -18,12 +20,6 @@ $secondary-color: hsl(333, 80%, 67%); // Soft Pink
 
 @mixin media-sml {
   @media screen and (min-width: 375px) {
-    @content;
-  }
-}
-
-@mixin media-lg {
-  @media screen and (min-width: 1440px) {
     @content;
   }
 }

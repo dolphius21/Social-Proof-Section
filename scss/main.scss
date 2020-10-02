@@ -1,0 +1,145 @@
+@import "config";
+@import "media";
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/bg-pattern-top-desktop.svg) no-repeat top left,
+    url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 10vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color;
+}
+
+p {
+  line-height: 1.75;
+}
+
+.flex-1 {
+  align-self: flex-start;
+}
+
+.flex-2 {
+  align-self: center;
+}
+
+.flex-3 {
+  align-self: flex-end;
+}
+
+.social-proof {
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+  }
+
+  &-content {
+    width: 40%;
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      line-height: 1;
+    }
+
+    p {
+      color: set-text-color(white);
+    }
+  }
+
+  &-ratings {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  &-rating {
+    display: flex;
+    align-items: center;
+    background: $light-neutral-color;
+    width: 85%;
+    padding: 1.25rem;
+    padding-left: 2rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+
+    &-stars {
+      margin-right: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
+
+  &-comments {
+    display: flex;
+    height: 250px;
+    margin-bottom: 6rem;
+  }
+
+  &-comment {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 90%;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    &-image {
+      border-radius: 50%;
+      width: 50px;
+      margin-right: 2rem;
+    }
+
+    &-desc {
+      color: $secondary-color;
+    }
+
+    h4 {
+      color: set-text-color($primary-color);
+    }
+
+    &-main {
+      font-size: 0.9rem;
+    }
+  }
+
+  &-comment:nth-child(2) {
+    margin: 0 1.5rem;
+  }
+}
+
+.attribution {
+  font-size: 0.85rem;
+  color: $dark-neutral-color;
+  text-align: center;
+  width: 100%;
+  border-top: 1px dotted $dark-neutral-color;
+  padding-top: 1rem;
+
+  a {
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
