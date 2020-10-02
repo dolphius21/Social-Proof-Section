@@ -1,5 +1,4 @@
 @import "config";
-@import "media";
 
 .main {
   width: 100vw;
@@ -111,3 +110,5 @@ p {
     text-decoration: none;
   }
 }
+
+@import "media";
