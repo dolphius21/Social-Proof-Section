@@ -18,8 +18,8 @@ $dark-neutral-color: hsl(303, 10%, 53%);
   font-family: "Spartan", sans-serif;
 }
 
-@mixin media-sml {
-  @media screen and (min-width: 375px) {
+@mixin media-lg {
+  @media screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
     @content;
   }
 }
