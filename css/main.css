@@ -158,6 +158,7 @@ p {
   padding: 2rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 .social-proof-comment-header {
@@ -173,7 +174,7 @@ p {
 .social-proof-comment-image {
   border-radius: 50%;
   width: 50px;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .social-proof-comment-desc {
