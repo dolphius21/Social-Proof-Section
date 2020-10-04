@@ -10,6 +10,7 @@
 
   .social-proof {
     padding: 3rem 0;
+    max-width: 100%;
 
     &-row {
       display: flex;
@@ -69,5 +70,9 @@
 
   .flex-3 {
     align-self: flex-end;
+  }
+
+  .attribution {
+    max-width: 100%;
   }
 }

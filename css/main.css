@@ -7,7 +7,6 @@
 }
 
 .main {
-  width: 100vw;
   height: 100vh;
   background: url(../images/bg-pattern-top-mobile.svg) no-repeat top left, url(../images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
 }
@@ -32,6 +31,8 @@ p {
 
 .social-proof {
   padding-bottom: 2rem;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .social-proof-row {
@@ -106,11 +107,12 @@ p {
 }
 
 .attribution {
+  max-width: 650px;
+  margin: 0 auto;
   font-size: 0.85rem;
   color: #937b92;
   margin: 0 auto;
   text-align: center;
-  width: 80%;
   border-top: 1px dotted #937b92;
   padding: 1rem 0;
 }
@@ -129,6 +131,7 @@ p {
   }
   .social-proof {
     padding: 3rem 0;
+    max-width: 100%;
   }
   .social-proof-row {
     display: -webkit-box;
@@ -197,6 +200,9 @@ p {
   .flex-3 {
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+  .attribution {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
