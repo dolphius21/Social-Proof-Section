@@ -147,6 +147,8 @@ p {
   .social-proof-content {
     text-align: left;
     width: 40%;
+    -webkit-animation: right 0.75s ease-out;
+            animation: right 0.75s ease-out;
   }
   .social-proof-content h2 {
     font-size: 3rem;
@@ -203,6 +205,108 @@ p {
   }
   .attribution {
     max-width: 100%;
+  }
+  .left-1 {
+    -webkit-animation: left 0.5s ease-out;
+            animation: left 0.5s ease-out;
+  }
+  .left-2 {
+    -webkit-animation: left 1s ease-out;
+            animation: left 1s ease-out;
+  }
+  .left-3 {
+    -webkit-animation: left 1.5s ease-out;
+            animation: left 1.5s ease-out;
+  }
+  .up-1 {
+    -webkit-animation: up 0.5s ease-out;
+            animation: up 0.5s ease-out;
+  }
+  .up-2 {
+    -webkit-animation: up 1s ease-out;
+            animation: up 1s ease-out;
+  }
+  .up-3 {
+    -webkit-animation: up 1.5s ease-out;
+            animation: up 1.5s ease-out;
+  }
+}
+
+@-webkit-keyframes up {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes left {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes right {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */

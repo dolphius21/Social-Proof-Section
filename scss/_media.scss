@@ -21,6 +21,7 @@
     &-content {
       text-align: left;
       width: 40%;
+      animation: right 0.75s ease-out;
 
       h2 {
         font-size: 3rem;
@@ -74,5 +75,62 @@
 
   .attribution {
     max-width: 100%;
+  }
+
+  .left-1 {
+    animation: left 0.5s ease-out;
+  }
+
+  .left-2 {
+    animation: left 1s ease-out;
+  }
+
+  .left-3 {
+    animation: left 1.5s ease-out;
+  }
+
+  .up-1 {
+    animation: up 0.5s ease-out;
+  }
+
+  .up-2 {
+    animation: up 1s ease-out;
+  }
+
+  .up-3 {
+    animation: up 1.5s ease-out;
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
